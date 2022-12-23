@@ -7,15 +7,15 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Financial walkthrough coming soon in 2023.
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://i.imgur.com/lSoUQr2.png"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Financial Planning
         </a>
       </header>
     </div>
