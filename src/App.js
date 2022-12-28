@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Card from "./components/Card";
+import DownArrow from "./components/DownArrow";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         >
           Financial Planning
         </a>
+        <DownArrow />
       </header>
       <body className="App-body">
         <Card
