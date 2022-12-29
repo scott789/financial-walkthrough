@@ -1,7 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Card from "./components/Card";
-import DownArrow from "./components/DownArrow";
+import BasicCard from "./components/BasicCard";
 
 function App() {
   return (
@@ -17,38 +16,37 @@ function App() {
         >
           Financial Planning
         </a>
-        <DownArrow />
       </header>
       <body className="App-body">
-        <Card
+        <BasicCard
           title="Do they have an emergency fund?"
-          backTitle="Savings"
-          backText="Establish 3-6 months' emergency savings"
+          shortTitle="Savings"
+          action="Establish 3-6 months' emergency savings"
         />
-        <Card
+        <BasicCard
           title="Are they utilizing childcare?"
-          backTitle="Childcare"
-          backText="Contribute to FSA dependent care card"
+          shortTitle="Childcare"
+          action="Contribute to FSA dependent care card"
         />
-        <Card
+        <BasicCard
           title="Do they have dependents?"
-          backTitle="Dependents"
-          backText="Obtain life insurance policy"
+          shortTitle="Dependents"
+          action="Obtain life insurance policy"
         />
-        <Card
+        <BasicCard
           title="Are they saving for college?"
-          backTitle="College"
-          backText="Contribute to 529 plan"
+          shortTitle="College"
+          action="Contribute to 529 plan"
         />
-        <Card
+        <BasicCard
           title="Do they have a tax advantaged retirement account?"
-          backTitle="Retirement Account"
-          backText="Maximize contributions to 401k/IRA"
+          shortTitle="Retirement Account"
+          action="Maximize contributions to 401k/IRA"
         />
-        <Card
+        <BasicCard
           title="Do they have high interest debt?"
-          backTitle="Debt"
-          backText="Prioritize paying off credit card debt >10%"
+          shortTitle="Debt"
+          action="Prioritize paying off credit card debt >10%"
         />
       </body>
     </div>
