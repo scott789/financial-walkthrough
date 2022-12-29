@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Do they have an emergency fund?",
+    "category": "Savings",
+    "action": "Establish 3-6 months' emergency savings"
+  },
+  {
+    "id": 2,
+    "title": "Are they utilizing childcare?",
+    "category": "Childcare",
+    "action": "Contribute to FSA dependent care card"
+  },
+  {
+    "id": 3,
+    "title": "Do they have dependents?",
+    "category": "Dependents",
+    "action": "Obtain life insurance policy"
+  },
+  {
+    "id": 4,
+    "title": "Are they saving for college?",
+    "category": "College",
+    "action": "Contribute to 529 plan"
+  },
+  {
+    "id": 5,
+    "title": "Do they have a tax advantaged retirement account?",
+    "category": "Retirement Account",
+    "action": "Maximize contributions to 401k/IRA"
+  },
+  {
+    "id": 6,
+    "title": "Do they have high interest debt?",
+    "category": "Debt",
+    "action": "Prioritize paying off credit card debt >10%"
+  }
+]
