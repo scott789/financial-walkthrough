@@ -11,7 +11,7 @@ import Typography from "@mui/material/Typography";
 
 export default function BasicCard(props) {
   return (
-      <Card elevation={3} sx={{ minWidth: 275 }}>
+      <Card elevation={10} sx={{ minWidth: 275 }}>
         <CardContent color="secondary">
           <Typography variant="h5" component="div">
             {props.title}
