@@ -7,7 +7,7 @@ export default function Cards() {
   const [list, setList] = useState([]);
 
   useEffect(() => {
-    getJson().then(list => setList(list));
+    getJson().then((list) => setList(list));
   }, []);
 
   return (
@@ -20,6 +20,8 @@ export default function Cards() {
                 title={question.title}
                 shortTitle={question.shortTitle}
                 action={question.action}
+                details={question.details}
+                noAction={question.noAction}
               />
             </Paper>
           </Grid>
@@ -31,9 +33,12 @@ export default function Cards() {
 
 async function getJson() {
   try {
-    const response = await fetch('https://financial-walkthrough-data.s3.amazonaws.com/questions.json', {
-      method: "GET"
-    })
+    const response = await fetch(
+      "https://financial-walkthrough-data.s3.amazonaws.com/questions.json",
+      {
+        method: "GET",
+      }
+    );
     return await response.json();
   } catch (error) {
     console.error(error);
