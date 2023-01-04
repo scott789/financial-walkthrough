@@ -19,6 +19,8 @@ export default function BasicCard(props) {
         title={props.title}
         shortTitle={props.shortTitle}
         action={props.action}
+        noAction={props.noAction}
+        details={props.details}
       />
     </Card>
   );
@@ -72,19 +74,19 @@ function BasicTabs(props) {
           onChange={handleChange}
           aria-label="basic tabs example"
         >
-          <Tab label="Details" {...a11yProps(0)} />
-          <Tab label="Yes" {...a11yProps(1)} />
-          <Tab label="No" {...a11yProps(2)} />
+          <Tab label="Yes" {...a11yProps(0)} />
+          <Tab label="No" {...a11yProps(1)} />
+          <Tab label="Details" {...a11yProps(2)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        <p>Details would go here about this subject</p>
+        <p>{props.action}</p>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        {props.action}
+        <p>{props.noAction}</p>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        <p>Details would go here about what to do for answering "No"</p>
+        <p>{props.details}</p>
       </TabPanel>
     </Box>
   );
