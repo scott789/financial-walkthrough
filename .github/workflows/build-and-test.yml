@@ -1,0 +1,22 @@
+name: 'React'
+
+on:
+  push:
+    branches: ['main']
+  pull_request:
+    branches: ['main']
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install dependencies
+        run: npm i
+      - name: Check formatting
+        run: npm run check-format
+      - name: Build
+        run: npm run build
+      - name: Run unit tests
+        run: npm run test
