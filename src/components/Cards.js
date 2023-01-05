@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import BasicCard from "./BasicCard";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
+import "./Cards.css";
 
 export default function Cards() {
   const [list, setList] = useState([]);
@@ -11,7 +12,7 @@ export default function Cards() {
   }, []);
 
   return (
-    <div>
+    <div className="cards-container">
       <Grid container spacing={3}>
         {list.map((question) => (
           <Grid item xs={12} sm={6} md={3}>
