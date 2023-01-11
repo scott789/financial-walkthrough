@@ -73,6 +73,7 @@ function BasicTabs(props) {
           value={value}
           onChange={handleChange}
           aria-label="basic tabs example"
+          centered
         >
           <Tab label="Yes" {...a11yProps(0)} />
           <Tab label="No" {...a11yProps(1)} />
