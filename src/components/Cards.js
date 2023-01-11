@@ -8,7 +8,7 @@ export default function Cards() {
   const [list, setList] = useState([]);
 
   useEffect(() => {
-    getJson().then((list) => setList(list));
+    getQuestions().then((list) => setList(list));
   }, []);
 
   return (
@@ -32,7 +32,7 @@ export default function Cards() {
   );
 }
 
-async function getJson() {
+async function getQuestions() {
   try {
     const response = await fetch(
       "https://financial-walkthrough-data.s3.amazonaws.com/questions.json",
