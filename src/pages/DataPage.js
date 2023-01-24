@@ -5,7 +5,7 @@ function DataPage() {
     <div className="App">
       <BasicAppBar />
       <div className="d-flex justify-content-center">
-        <p>404 Not Found</p>
+        <p>TODO: A form would be here</p>
       </div>
     </div>
   );
