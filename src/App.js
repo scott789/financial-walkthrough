@@ -1,13 +1,26 @@
 import "./App.css";
-import BasicAppBar from "./components/BasicAppBar";
-import Cards from "./components/Cards";
+
+import Error from "./pages/ErrorPage"
+import Data from "./pages/DataPage"
+import CardsPage from "./pages/CardsPage";
+import {createBrowserRouter, RouterProvider} from 'react-router-dom';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <CardsPage />,
+    errorElement: <Error />,
+  },
+  {
+    path: '/data',
+    element: <Data />,
+    errorElement: <Error />,
+  }
+]);
 
 function App() {
   return (
-    <div className="App">
-      <BasicAppBar />
-      <Cards />
-    </div>
+    <RouterProvider router={router} />
   );
 }
 
